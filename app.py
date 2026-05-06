@@ -62,3 +62,5 @@ def generate_dataset(n=2000, noise_ratio=0.05, random_state=42):
 df = generate_dataset()
 
 st.dataframe(df)
+
+st.line_chart(data="signal_strength", x=None, y=None, x_label=None, y_label=None, color=None, width="stretch", height="content", use_container_width=None)
