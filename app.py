@@ -124,7 +124,7 @@ grouped = df.groupby("hour")["launch_to_israel"].mean()
 st.line_chart(grouped)
 
 ######################
-by_day = df.groupby("day_of_week")["launch_to_israel"].mean()
+by_day = df.groupby("day_of_week")["launch_to_israel"].sum()
 st.bar_chart(by_day)
 
 #####################
