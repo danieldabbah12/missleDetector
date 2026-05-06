@@ -131,9 +131,6 @@ st.bar_chart(by_day)
 
 
 
-bins = pd.cut(df["signal_strength"], bins=20)
-ratio = df.groupby(bins)["launch_to_israel"].mean()
-st.bar_chart(ratio)
 
 
-####################
+
