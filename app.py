@@ -112,12 +112,17 @@ df = generate_dataset()
 
 st.subheader("📊 הדאטה:")
 st.dataframe(df)
-
+#######################
 st.scatter_chart(
     df,
     x="signal_strength",
     y="signal_duration",
     color="launch_to_israel"
 )
+#######################
 grouped = df.groupby("hour")["launch_to_israel"].mean()
 st.line_chart(grouped)
+
+######################
+by_day = df.groupby("day_of_week")["launch_to_israel"].mean()
+st.bar_chart(by_day)
