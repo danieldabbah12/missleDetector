@@ -113,6 +113,8 @@ df = generate_dataset()
 st.subheader("📊 הדאטה:")
 st.dataframe(df)
 #######################
+df["launch_to_israel"] = df["launch_to_israel"].map({0: "No", 1: "Yes"})
+
 st.scatter_chart(
     df,
     x="signal_strength",
