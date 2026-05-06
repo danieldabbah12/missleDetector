@@ -126,3 +126,15 @@ st.line_chart(grouped)
 ######################
 by_day = df.groupby("day_of_week")["launch_to_israel"].mean()
 st.bar_chart(by_day)
+
+#####################
+
+
+st.write("Real launches")
+st.bar_chart(df[df["launch_to_israel"] == 1]["signal_strength"].value_counts().sort_index())
+
+st.write("False alarms")
+st.bar_chart(df[df["launch_to_israel"] == 0]["signal_strength"].value_counts().sort_index())
+
+
+####################
