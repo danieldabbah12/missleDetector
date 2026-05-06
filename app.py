@@ -130,6 +130,7 @@ st.bar_chart(by_day)
 #####################
 
 
+
 st.write("Real launches")
 st.bar_chart(df[df["launch_to_israel"] == 1]["signal_strength"].value_counts().sort_index())
 
