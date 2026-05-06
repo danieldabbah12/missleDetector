@@ -112,3 +112,10 @@ df = generate_dataset()
 
 st.subheader("📊 הדאטה:")
 st.dataframe(df)
+
+st.scatter_chart(
+    df,
+    x="signal_strength",
+    y="time_to_peak",
+    color="launch_to_israel"
+)
