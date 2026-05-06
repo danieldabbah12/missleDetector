@@ -119,3 +119,5 @@ st.scatter_chart(
     y="signal_duration",
     color="launch_to_israel"
 )
+grouped = df.groupby("hour")["launch_to_israel"].mean()
+st.line_chart(grouped)
