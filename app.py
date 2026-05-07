@@ -115,8 +115,8 @@ st.dataframe(df)
 #######################
 st.scatter_chart(
     df,
-    x="signal_strength",
-    y="signal_duration",
+    x="time_to_pick",
+    y="latitude",
     color="launch_to_israel"
 )
 #######################
