@@ -115,7 +115,7 @@ st.dataframe(df)
 #######################
 st.scatter_chart(
     df,
-    x="time_to_pick",
+    x="longitude",
     y="latitude",
     color="launch_to_israel"
 )
